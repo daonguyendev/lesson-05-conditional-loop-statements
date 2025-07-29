@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice if-else</title>
+  </head>
+  <body>
+    <script>
+      // Kiểm tra một số nhập vào từ bàn phím xem có phải số chẵn, dương hay không
+      // Nếu đúng là số chẵn dương thì in ra chẵn dương, ngược lại lẻ dương hoặc
+      // lẻ âm
+
+      // Đầu vào
+      let a = Number(prompt("Mời bạn nhập số bất kỳ: "));
+
+      // Xử lý, Đầu ra
+      if (a == 0) {
+        console.log(a + " là số không dương, không âm");
+        alert(a + " là số không dương, không âm");
+      } else {
+        if (a % 2 == 0 && a > 0) {
+          console.log(a + " là số chẵn, dương");
+          alert(a + " là số chẵn, dương");
+        } else if (a % 2 != 0 && a > 0) {
+          console.log(a + " là số lẻ, dương");
+          alert(a + " là số lẻ, dương");
+        } else if (a % 2 != 0 && a < 0) {
+          console.log(a + " là số lẻ, âm");
+          alert(a + " là số lẻ, âm");
+        } else {
+          console.log(a + " là số chẵn, âm");
+          alert(a + " là số chẵn, âm");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch-case 2</title>
+</head>
+<body>
+    <script>
+        let day = prompt("Mời bạn nhập thứ: ");
+        
+        switch (day) {
+            case "Thứ 2":
+            case "Thứ 3":
+            case "Thứ 4":
+            case "Thứ 5":
+            case "Thứ 6":
+                alert("Ngày trong tuần");
+                break;
+            case "Thứ 7":
+            case "Chủ nhật":
+                alert("Ngày cuối tuần");
+                break;
+            default:
+                alert("Ngày không hợp lệ!");
+                break;
+        }
+    </script>
+</body>
+</html>
