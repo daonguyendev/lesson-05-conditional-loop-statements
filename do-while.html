@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>do-while loop</title>
+  </head>
+  <body>
+    <script>
+      // Hiển thị menu chức năng của một phần mềm quản lý nhân sự
+      // Cho phép người dùng chọn chức năng muốn thực thi và chọn 0 để thoát
+      // phần mềm
+      var choose = -1;
+      do {
+        choose = Number(
+          prompt(
+            "--- Quản lý nhân sự ---\n" +
+              "1. Xem danh sách nhân sự\n" +
+              "2. Tìm kiếm nhân sự theo tên\n" +
+              "3. Thêm mới nhân sự\n" +
+              "4. Sửa thông tin nhân sự\n" +
+              "5. Xóa nhân sự\n" +
+              "-----------------------\n" +
+              "=> Mời bạn chọn chức năng muốn sử dụng:\n" +
+              "Hoặc bấm phím 0 để thoát chương trình!"
+          )
+        );
+
+        switch (choose) {
+            case 1:
+                alert("Chức năng 1 đang cập nhật...");
+                break;
+            case 2:
+                alert("Chức năng 2 đang cập nhật...");
+                break;
+            case 3:
+                alert("Chức năng 3 đang cập nhật...");
+                break;
+            case 4:
+                alert("Chức năng 4 đang cập nhật...");
+                break;
+            case 5:
+                alert("Chức năng 5 đang cập nhật...");
+                break;
+            default:
+                alert("Chức năng không hợp lệ!");
+                break;
+        }
+      } while (choose != 0);
+    </script>
+  </body>
+</html>

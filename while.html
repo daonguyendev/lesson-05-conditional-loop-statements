@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while loop</title>
+</head>
+<body>
+    <script>
+        // Tính thương 2 số a, b, nếu b nhập bằng 0 sẽ báo lỗi b không hợp lệ
+        // và yêu cầu người dùng nhập lại tới khi nào người dùng nhập số b
+        // khác không (hợp lệ) thì mới thực hiện phép tính thương a/b và in 
+        // kết quả hộp thoại alert
+        var a = Number(prompt("Nhập a: "));
+        var b = Number(prompt("Nhập b: "));
+
+        while (b == 0) {
+            alert("b không hợp lệ, vui lòng nhập lại b!");
+            b = Number(prompt("Nhập b: "));
+        }
+
+        var c = a/b;
+        alert("Thương của a, b là: " + c);
+    </script>
+</body>
+</html>
